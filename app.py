@@ -245,7 +245,7 @@ def render_ranking_table(df_sub, headers):
 
 # General function to render Scrims tables
 def render_scrims_tables(gid, scrim_subtitle, team_coords, game_coords_list, overall_coords):
-    st.markdown(f"<h1 style='text-align: center;'>⚔️ Scrims Tuesday - {scrim_subtitle}</h1>", unsafe_allow_html=True)
+    st.markdown(f"<h1 style='text-align: center;'>⚔️- {scrim_subtitle}</h1>", unsafe_allow_html=True)
     st.write("---")
     
     df = load_data(gid)
@@ -332,7 +332,7 @@ if page == "Leaderboard":
         st.error(f"Error Lobby 3 Data: {e}")
 
 elif page == "System Score":
-    st.markdown("<h1 style='text-align: center;'>📊 System Score</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>📊Score</h1>", unsafe_allow_html=True)
     st.write("---")
     
     scoring_html = """
@@ -386,7 +386,7 @@ elif page == "Scrims 3":
     render_scrims_tables('547827980', "Scrims 3", s3_teams, s3_games, s3_overall)
 
 elif page == "Risultati Giocatore":
-    st.markdown("<h1 style='text-align: center;'>👤 Player Results</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>👤 Player</h1>", unsafe_allow_html=True)
     st.write("---")
     
     df_player = load_data('1132209653')
@@ -434,7 +434,7 @@ elif page == "Risultati Giocatore":
 # ==========================================
 elif page == "PERSONAL STATS":
     st.markdown("<div style='background-color: #0e1117; border: 2px solid #262730; border-radius: 12px; padding: 20px;'>", unsafe_allow_html=True)
-    st.markdown("### 👤 Personal Stats Dashboard")
+    st.markdown("### 👤 Personal")
 
     # Inizializzazione sicura delle variabili
     target_ws = None
