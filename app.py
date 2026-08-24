@@ -172,7 +172,7 @@ def get_logo_html():
             try:
                 with open(path, "rb") as img_file:
                     encoded = base64.b64encode(img_file.read()).decode()
-                    return f'<img src="data:image/{ext};base64,{encoded}" style="height: 3.5rem; width: auto; vertical-align: middle; border-radius: 6px;">'
+                    return f'<img src="data:image/{ext};base64,{encoded}" style="height: 2.5rem; width: auto; vertical-align: middle; border-radius: 6px;">'
             except Exception:
                 pass
     return ""
