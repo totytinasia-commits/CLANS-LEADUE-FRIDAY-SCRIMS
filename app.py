@@ -183,7 +183,7 @@ with col_l2:
     st.markdown(f"""
         <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 15px; width: 100%;">
             {logo_html}
-            <h1 style='color: #fff; font-size: 2.8rem; margin: 0; line-height: 1; white-space: nowrap;'>CL FRIDAY SCRIMS</h1>
+            <h1 style='color: #fff; font-size: 1.8rem; margin: 0; line-height: 1; white-space: nowrap;'>CL FRIDAY SCRIMS</h1>
         </div>
     """, unsafe_allow_html=True)
 
